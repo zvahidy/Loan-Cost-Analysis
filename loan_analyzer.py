@@ -115,8 +115,10 @@ def get_present_value(future_value, remaining_months, annual_discount_rate):
 
 # @TODO: Use the function to calculate the present value of the new loan given below.
 #    Use an `annual_discount_rate` of 0.2 for this new loan calculation.
-present_value = get_present_value(future_value, remaining_months, 0.2)
-print(f"The present value of the loan is: {present_value}")
+annual_discount_rate = 0.2
+present_value_of_new_loan = get_present_value(future_value, remaining_months, annual_discount_rate)
+
+print(f"The present value of the new loan is: {present_value_of_new_loan}")
 
 
 """Part 4: Conditionally filter lists of loans.
